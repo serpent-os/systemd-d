@@ -2,12 +2,12 @@ module systemd.journal;
 
 import core.stdc.stdarg;
 import core.sys.posix.sys.uio;
+import systemd.common;
+import systemd.id128;
 
 extern (C):
 @nogc:
 nothrow:
-
-struct _sd_useless_struct_to_allow_trailing_semicolon_;
 
 int sd_journal_print(int priority, const(char)* format, ...);
 int sd_journal_printv(int priority, const(char)* format, va_list ap);
@@ -131,6 +131,3 @@ int sd_journal_has_runtime_files(sd_journal* j);
 int sd_journal_has_persistent_files(sd_journal* j);
 
 void sd_journal_closep(sd_journal** p);
-struct _sd_useless_struct_to_allow_trailing_semicolon_;
-
-struct _sd_useless_struct_to_allow_trailing_semicolon_;

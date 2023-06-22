@@ -1,13 +1,14 @@
 module systemd.daemon;
 
+import core.stdc.stdarg;
 import core.sys.posix.sys.socket;
 import core.sys.posix.sys.types;
+import systemd.common;
+import systemd.id128;
 
 extern (C):
 @nogc:
 nothrow:
-
-struct _sd_useless_struct_to_allow_trailing_semicolon_;
 
 int sd_listen_fds(int unset_environment);
 
