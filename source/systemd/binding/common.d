@@ -5,14 +5,14 @@
  */
 
 /**
- * systemd.common
+ * systemd.binding.common
  *
  * Symbols missed by dstep
  *
  * Authors: Copyright © 2020-2023 Serpent OS Developers
  * License: Zlib
  */
-module systemd.common;
+module systemd.binding.common;
 
 enum SD_ID128_STRING_MAX = 33U;
 enum SD_ID128_UUID_STRING_MAX = 37U;

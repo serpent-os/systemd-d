@@ -1,10 +1,10 @@
-module systemd.bus_vtable;
+module systemd.binding.bus_vtable;
 
 import core.stdc.config;
 import core.stdc.stdarg;
-import systemd.bus;
-import systemd.common;
-import systemd.id128;
+import systemd.binding.bus;
+import systemd.binding.common;
+import systemd.binding.id128;
 
 extern (C):
 @nogc:

@@ -1,7 +1,7 @@
-module systemd.id128;
+module systemd.binding.id128;
 
 import core.stdc.stdarg;
-import systemd.common;
+import systemd.binding.common;
 
 extern (C):
 @nogc:

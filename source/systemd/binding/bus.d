@@ -1,12 +1,12 @@
-module systemd.bus;
+module systemd.binding.bus;
 
 import core.stdc.stdarg;
 import core.stdc.stdio;
 import core.sys.posix.sys.uio;
-import systemd.bus_vtable;
-import systemd.common;
-import systemd.event;
-import systemd.id128;
+import systemd.binding.bus_vtable;
+import systemd.binding.common;
+import systemd.binding.event;
+import systemd.binding.id128;
 
 extern (C):
 @nogc:

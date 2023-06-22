@@ -1,10 +1,10 @@
-module systemd.daemon;
+module systemd.binding.daemon;
 
 import core.stdc.stdarg;
 import core.sys.posix.sys.socket;
 import core.sys.posix.sys.types;
-import systemd.common;
-import systemd.id128;
+import systemd.binding.common;
+import systemd.binding.id128;
 
 extern (C):
 @nogc:

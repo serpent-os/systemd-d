@@ -1,12 +1,12 @@
-module systemd.event;
+module systemd.binding.event;
 
 import core.stdc.stdarg;
 import core.stdc.time;
 import core.sys.linux.sys.inotify;
 import core.sys.linux.sys.signalfd;
 import core.sys.posix.sys.wait;
-import systemd.common;
-import systemd.id128;
+import systemd.binding.common;
+import systemd.binding.id128;
 
 extern (C):
 @nogc:

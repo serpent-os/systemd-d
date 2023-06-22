@@ -5,7 +5,7 @@
  */
 
 /**
- * systemd
+ * systemd.binding
  *
  * Direct (low level) API binding to libsystemd
  *
@@ -13,13 +13,15 @@
  * License: Zlib
  */
 
-public import systemd.bus_vtable;
-public import systemd.bus;
-public import systemd.common;
-public import systemd.daemon;
-public import systemd.event;
-public import systemd.id128;
-public import systemd.journal;
+module systemd.binding;
+
+public import systemd.binding.bus_vtable;
+public import systemd.binding.bus;
+public import systemd.binding.common;
+public import systemd.binding.daemon;
+public import systemd.binding.event;
+public import systemd.binding.id128;
+public import systemd.binding.journal;
 
 public import std.exception : errnoEnforce;
 
